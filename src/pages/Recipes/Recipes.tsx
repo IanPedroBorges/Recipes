@@ -6,6 +6,7 @@ import { MealsContext } from '../../context/MealsContext/MealsContext';
 import { api } from '../../services/api';
 import style from './styles.module.css';
 
+
 type RecipesProps = {
   path: string,
 };
@@ -81,7 +82,7 @@ function Recipes({ path } : RecipesProps) {
               onClick={ () => handleClickCategory(categoryBtn.strCategory) }
             >
               <img
-                src={ `src/images/category_items/${categoryBtn.strCategory}.svg` }
+                src={ `/images/category_items/${categoryBtn.strCategory}.svg` }
                 alt={ categoryBtn.strCategory }
               />
             </button>
@@ -93,7 +94,7 @@ function Recipes({ path } : RecipesProps) {
         >
           <img
             src={ path === 'meals' ? 'src/images/category_items/All.svg'
-              : 'src/images/category_items/AllDrinks.svg' }
+              : '/images/category_items/AllDrinks.svg' }
             alt="all"
           />
         </button>

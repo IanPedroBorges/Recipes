@@ -1,0 +1,156 @@
+const meals = {
+  meals: [
+    {
+      idMeal: '52977',
+      strMeal: 'Corba',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/58oia61564916529.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=VVnZd8A84z4',
+    },
+    {
+      idMeal: '52978',
+      strMeal: 'Kumpir',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/mlchx21564916997.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=IEDEtZ4UVtI',
+    },
+    {
+      idMeal: '52785',
+      strMeal: 'Dal fry',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/wuxrtu1483564410.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=J4D855Q9-jg',
+    },
+    {
+      idMeal: '52804',
+      strMeal: 'Poutine',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/uuyrrx1487327597.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=UVAMAoA2_WU',
+    },
+    {
+      idMeal: '52844',
+      strMeal: 'Lasagne',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/wtsvxx1511296896.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=gfhfsBPt46s',
+    },
+    {
+      idMeal: '52929',
+      strMeal: 'Timbits',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/txsupu1511815755.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=fFLn1h80AGQ',
+    },
+    {
+      idMeal: '52948',
+      strMeal: 'Wontons',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/1525876468.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=9h9No18ZyCI',
+    },
+    {
+      idMeal: '52971',
+      strMeal: 'Kafteji',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/1bsv1q1560459826.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=-TFf-Zu-xQU',
+    },
+    {
+      idMeal: '53013',
+      strMeal: 'Big Mac',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/urzj1d1587670726.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=C5J39YnnPsg',
+    },
+    {
+      idMeal: '52769',
+      strMeal: 'Kapsalon',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/sxysrt1468240488.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=UIcuiU1kV8I',
+    },
+    {
+      idMeal: '52802',
+      strMeal: 'Fish pie',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/ysxwuq1487323065.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=2sX4fCgg-UI',
+    },
+    {
+      idMeal: '52854',
+      strMeal: 'Pancakes',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/rwuyqx1511383174.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=LWuuCndtJr0',
+    },
+    {
+      idMeal: '52887',
+      strMeal: 'Kedgeree',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/utxqpt1511639216.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=_Pw1I1-SItE',
+    },
+    {
+      idMeal: '52906',
+      strMeal: 'Flamiche',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/wssvvs1511785879.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=vT0q5c880Rg',
+    },
+    {
+      idMeal: '52980',
+      strMeal: 'Stamppot',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/hyarod1565090529.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=hTrSXryX31A',
+    },
+    {
+      idMeal: '53006',
+      strMeal: 'Moussaka',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/ctg8jd1585563097.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=8U_29i9Qp5U',
+    },
+    {
+      idMeal: '52791',
+      strMeal: 'Eton Mess',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/uuxwvq1483907861.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=43WgiNq54L8',
+    },
+    {
+      idMeal: '52811',
+      strMeal: 'Ribollita',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/xrrwpx1487347049.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=BiQUYTBb6eQ',
+    },
+    {
+      idMeal: '52871',
+      strMeal: 'Yaki Udon',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/wrustq1511475474.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=5Iy0MCowSvA',
+    },
+    {
+      idMeal: '52926',
+      strMeal: 'Tourtiere',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/ytpstt1511814614.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=A96hbwobKKs',
+    },
+    {
+      idMeal: '52931',
+      strMeal: 'Sugar Pie',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/yrstur1511816601.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=uVQ66jiL-Dc',
+    },
+    {
+      idMeal: '52963',
+      strMeal: 'Shakshuka',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/g373701551450225.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=C-3_jYrfdBU',
+    },
+    {
+      idMeal: '52774',
+      strMeal: 'Pad See Ew',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/uuuspp1468263334.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=Ohy1DELF4is',
+    },
+    {
+      idMeal: '52781',
+      strMeal: 'Irish stew',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/sxxpst1468569714.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=kYH2qJXnSMo',
+    },
+    {
+      idMeal: '52832',
+      strMeal: 'Coq au vin',
+      strMealThumb: 'https://www.themealdb.com/images/media/meals/qstyvs1505931190.jpg',
+      strYoutube: 'https://www.youtube.com/watch?v=_ise46LADBs',
+    },
+  ],
+};
+
+export default meals;

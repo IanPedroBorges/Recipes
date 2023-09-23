@@ -1,0 +1,245 @@
+.DivMain {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+
+.DivMain > img {
+  width: 100vw;
+  height: 33vh;
+  background-size: cover;
+}
+
+.DivMain > h1 {
+  background: hsla(0, 0%, 0%, 0.4);
+  width: 100vw;
+  position: absolute;
+  top: 10%;
+  color: #fff;
+  text-align: center;
+  font-size: max(20px, 2vw);
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+}
+
+.DivAbsolute {
+  position: absolute;
+  width: 96vw;
+  top: 2%;
+  left: 2%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  background: hsla(0, 0%, 0%, 0.3);
+  border-radius: 15px;
+  padding: 5px;
+
+}
+
+.DivAbsolute > div {
+  display: flex;
+  align-items: center;
+}
+
+.DivAbsolute > div> h2 {
+  font-size: max(14px, 1.7vw);
+  font-weight: 700;
+  color: #1A1B1C;
+  font-style: normal;
+  line-height: normal;
+  margin: 0;
+  /* background-color: #FFF; */
+}
+
+.DivAbsolute > div > img {
+  /* border: 2px solid yellow; */
+  /* border-radius: 50%; */
+  padding: 0.4rem;
+  margin-right: 1rem;
+  width: 50px;
+  height: 50px;
+}
+
+.DivBtns {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 0.5rem;
+  /* background: hsla(43, 97%, 60%, 0.3); */
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+
+.DivBtns > button {
+  display: flex;
+  background: rgba(255, 255, 255, .0);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.DivList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.DivList > h3 {
+  color: #1a1b1c;
+  font-size: max(20px, 2vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.DivList > div {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  border-radius: 5.351px;
+  border: 0.554px solid #b1b1b1;
+  background:#FFF;
+  padding: 17px;
+}
+
+.DivList > div > li {
+  color: #1a1b1c;
+  font-size: max(14px, 2vw);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 15.8px;
+}
+
+.DivList > div > label {
+  color: #1A1B1C !important;
+font-size: max(14px, 2vw) !important;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.DivList > div > input[type="checkbox"] {
+  border-radius: 3px !important;
+  border: 2px solid #fcc436 !important;
+}
+
+.DivInstructions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.DivInstructions > h3 {
+  color: #1a1b1c;
+  font-size: max(20px, 2vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.DivInstructions > div {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  border-radius: 5.351px;
+  border: 0.554px solid #b1b1b1;
+  background: #fff;
+  padding: 17px;
+}
+
+.DivInstructions > div > p {
+  color: #1a1b1c;
+  font-size: max(14px, 2vw);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 15.8px;
+}
+
+.DivImages {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.DivImages > h3 {
+  color: #1a1b1c;
+  font-size: max(20px, 2vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.DivImages > div {
+  display: flex;
+  overflow-x: scroll;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 30px;
+}
+
+.DivImages > div > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2vw;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 5px;
+  background-color: #0000003f;
+  border-radius: 5px;
+}
+
+.DivImages > div > a > img {
+  width: 40.5vw;
+  border-radius: 5px;
+}
+
+.DivImages > div > a > p {
+  color: #1a1b1c;
+  font-size: max(12px, 1.5vw);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.BtnStatus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+}
+
+@media screen and (min-width: 850px) {
+  .DivMain > h1 {
+    top: 8%;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .DivMain > h1 {
+    top: 6%;
+  }
+}

@@ -1,0 +1,10 @@
+.Card > img {
+  width: 40vw;
+  border-radius: 10px;
+}
+
+.Card {
+  text-align: center;
+  background-color: #0000003f;
+  border-radius: 10px;
+}

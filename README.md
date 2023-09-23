@@ -45,16 +45,3 @@ Para mais Informações , entre em contato
 Email: ianhudback@gmail.com
 linkedin: https://www.linkedin.com/in/ian-borges/
 
-
-# Receitas Deliciosas - Drinks e Comidas
-
-
-## Índice
-- [Teste tecnico](#teste-tecnico)
-  - [Índice](#índice)
-- [Visão Geral](#visão-geral)
-- [Deploy](#deploy)
-- [Instalação](#instalação)
-- [Tecnologias](#tecnologias)
-- [Receitas Deliciosas - Drinks e Comidas](#receitas-deliciosas---drinks-e-comidas)
-  - [Índice](#índice-1)

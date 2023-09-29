@@ -14,6 +14,7 @@ type RecipesProps = {
 function Recipes({ path } : RecipesProps) {
   const { drinks, setDrinks } = useContext(DrinksContext);
   const { meals, setMeals } = useContext(MealsContext);
+  const [carregando, setCarregando] = useState(false);
 
   const [listCategory, setListCategory] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('');
@@ -23,11 +24,13 @@ function Recipes({ path } : RecipesProps) {
 
   useEffect(() => {
     const fetchData = async () => {
+      setCarregando(true);
       if (path === 'meals' && meals?.length === 0) {
         const dataMeals = await api(MEAL_URL);
         setMeals(dataMeals?.meals);
         const dataCategoryMeals = await api('https://www.themealdb.com/api/json/v1/1/list.php?c=list');
         setListCategory(dataCategoryMeals?.meals);
+        setCarregando(false);
       }
       if (path === 'drinks' && drinks?.length === 0) {
         const dataDrinks = await api(DRINK_URL);
@@ -35,28 +38,34 @@ function Recipes({ path } : RecipesProps) {
 
         const dataCategoryDrinks = await api('https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list');
         setListCategory(dataCategoryDrinks?.drinks);
+        setCarregando(false);
       }
     };
     fetchData();
-  }, []);
+  }, [path]);
 
   const handleClickCategory = async (clickedValue: string) => {
     const dataMeals = await api(MEAL_URL);
     const dataDrinks = await api(DRINK_URL);
+    setCarregando(true);
 
     if (path === 'drinks') {
       const drinksFilteredByCategory = await api(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${clickedValue}`);
       setDrinks(drinksFilteredByCategory?.drinks);
+      setCarregando(false);
     }
     if (path === 'meals') {
       const mealsFilteredByCategory = await api(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${clickedValue}`);
       setMeals(mealsFilteredByCategory?.meals);
+      setCarregando(false);
     }
     if (selectedCategory === clickedValue) {
       setMeals(dataMeals?.meals);
       setDrinks(dataDrinks?.drinks);
+      setCarregando(false);
     } else {
       setSelectedCategory(clickedValue);
+      setCarregando(false);
     }
   };
 
@@ -70,6 +79,8 @@ function Recipes({ path } : RecipesProps) {
       setMeals(dataMeals?.meals);
     }
   };
+
+  if (carregando) return <h1>Loading...</h1>;
 
   return (
     <>

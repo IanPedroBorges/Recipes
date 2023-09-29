@@ -82,7 +82,7 @@ function Recipes({ path } : RecipesProps) {
               onClick={ () => handleClickCategory(categoryBtn.strCategory) }
             >
               <img
-                src={ `/images/category_items/${categoryBtn.strCategory}.svg` }
+                src={ `src/images/category_items/${categoryBtn.strCategory}.svg` }
                 alt={ categoryBtn.strCategory }
               />
             </button>
@@ -94,7 +94,7 @@ function Recipes({ path } : RecipesProps) {
         >
           <img
             src={ path === 'meals' ? 'src/images/category_items/All.svg'
-              : '/images/category_items/AllDrinks.svg' }
+              : 'src/images/category_items/AllDrinks.svg' }
             alt="all"
           />
         </button>

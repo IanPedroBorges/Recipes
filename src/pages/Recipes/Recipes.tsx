@@ -93,7 +93,7 @@ function Recipes({ path } : RecipesProps) {
               onClick={ () => handleClickCategory(categoryBtn.strCategory) }
             >
               <img
-                src={ `src/images/category_items/${categoryBtn.strCategory}.svg` }
+                src={ `https://raw.githubusercontent.com/IanPedroBorges/Recipes/1083554fe7d0cfa0a5303bcf1bc729f0d9475038/src/images/category_items/${categoryBtn.strCategory}.svg` }
                 alt={ categoryBtn.strCategory }
               />
             </button>
@@ -104,8 +104,8 @@ function Recipes({ path } : RecipesProps) {
           onClick={ handleClickClear }
         >
           <img
-            src={ path === 'meals' ? 'src/images/category_items/All.svg'
-              : 'src/images/category_items/AllDrinks.svg' }
+            src={ path === 'meals' ? 'https://raw.githubusercontent.com/IanPedroBorges/Recipes/1083554fe7d0cfa0a5303bcf1bc729f0d9475038/src/images/category_items/All.svg'
+              : 'https://raw.githubusercontent.com/IanPedroBorges/Recipes/1083554fe7d0cfa0a5303bcf1bc729f0d9475038/src/images/category_items/AllDrinks.svg' }
             alt="all"
           />
         </button>

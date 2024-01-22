@@ -20,7 +20,7 @@ export default function MealsDetails({ meals }: { meals: Meals }) {
   const path = useLocation().pathname;
   const currentDate = new Date();
 
-  const mealTags = meals.strTags.length > 0
+  const mealTags = meals.strTags
     ? [meals.strTags
       .substring(0, meals.strTags.indexOf(',')),
     meals.strTags.substring(meals.strTags.indexOf(',')).replace(',', '')]
